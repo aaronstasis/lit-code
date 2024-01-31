@@ -251,7 +251,7 @@ class LitCode extends LitElement {
     if (selStart === selEnd) {
       const opening = e.key;
       const closing = this.closing[this.opening.indexOf(opening)];
-
+/*
       if (opening === '{'
         && (this.code[selStart] === '\n' || this.code.length === selStart)
       ) {
@@ -259,10 +259,10 @@ class LitCode extends LitElement {
         this.insertCode(selStart, opening + lineShift + this.indent + lineShift + closing);
         this.setCursor(selStart + lineShift.length + this.indent.length + 1);
       }
-      else {
+      else { */
         this.insertCode(selStart, opening + closing);
         this.setCursor(selStart + 1);
-      }
+      //}
     }
   }
 
